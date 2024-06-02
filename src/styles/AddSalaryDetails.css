@@ -1,0 +1,111 @@
+.salary-calculator-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+.salary-calculation,
+.display-salary-container {
+  flex: 1 1 100%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.salary-calculation {
+  background-color: #ffffff;
+}
+
+.reset-button {
+  padding: 5px 10px;
+  color: #007bff;
+
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+  position: absolute;
+  right: 70px;
+  top: 80px;
+}
+
+.basic-salary-container,
+.earnings-container,
+.deduction-container {
+  margin-bottom: 20px;
+}
+
+.earnings-container div,
+.deduction-container div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.earnings-container input[type="text"],
+.earnings-container input[type="number"],
+.deduction-container input[type="text"],
+.deduction-container input[type="number"] {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(40% - 20px);
+}
+
+.cancel-earning,
+.cancel-deduction {
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.add-new-earning,
+.add-new-deduction,
+.calculate-net-salary {
+  padding: 10px;
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.display-salary-container p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.display-salary-container p span {
+  width: 50%;
+  display: inline-block;
+}
+
+.display-salary-container p:nth-child(7) {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .salary-calculation,
+  .display-salary-container {
+    flex: 1 1 48%;
+  }
+}
+
+.subtopic-pharagraph {
+  font-size: 10px;
+  color: gray;
+}
